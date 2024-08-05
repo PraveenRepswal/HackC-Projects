@@ -11,6 +11,12 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  transition: background-color 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
 }
 
 .container {
@@ -20,6 +26,12 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 800px;
   width: 100%;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+body.dark-mode .container {
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 #title {
@@ -29,11 +41,19 @@ body {
   color: #333;
 }
 
+body.dark-mode #title {
+  color: #e0e0e0;
+}
+
 #description {
   text-align: center;
   margin-bottom: 20px;
   color: #666;
   font-size: 1.1em;
+}
+
+body.dark-mode #description {
+  color: #bdbdbd;
 }
 
 .form-group {
@@ -45,6 +65,10 @@ body {
   margin-bottom: 5px;
   font-weight: 600;
   color: #333;
+}
+
+body.dark-mode .form-group label {
+  color: #e0e0e0;
 }
 
 input[type="text"],
@@ -62,6 +86,21 @@ textarea {
   border-radius: 5px;
   font-size: 1em;
   margin-top: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+body.dark-mode input[type="text"],
+body.dark-mode input[type="email"],
+body.dark-mode input[type="number"],
+body.dark-mode input[type="range"],
+body.dark-mode input[type="date"],
+body.dark-mode input[type="color"],
+body.dark-mode input[type="file"],
+body.dark-mode select,
+body.dark-mode textarea {
+  background-color: #333;
+  color: #e0e0e0;
+  border-color: #555;
 }
 
 input[type="range"] {
@@ -71,6 +110,10 @@ input[type="range"] {
   height: 8px;
   border-radius: 4px;
   outline: none;
+}
+
+body.dark-mode input[type="range"] {
+  background: #666;
 }
 
 input[type="range"]::-webkit-slider-thumb {
@@ -165,6 +208,10 @@ textarea {
   color: #333;
 }
 
+body.dark-mode #rating-value {
+  color: #e0e0e0;
+}
+
 input[type="file"] {
   padding: 5px;
   cursor: pointer;
@@ -177,4 +224,58 @@ input[type="color"] {
   padding: 5px;
   border: none;
   cursor: pointer;
+}
+
+/* Dark mode toggle switch */
+.switch {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 0.9em;
+  color: #333;
+}
+
+body.dark-mode .switch {
+  color: #e0e0e0;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #007bff;
+}
+
+input:checked + .slider:before {
+  transform: translateX(14px);
 }
