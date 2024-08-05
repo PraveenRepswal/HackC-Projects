@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-    <title>Contact Us - Game Survey</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Reviews</title>
     <link rel="stylesheet" href="contact_style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,53 +13,67 @@
 
 <body>
     <div class="container">
-        <h1>Contact Us</h1>
-        <p>We'd love to hear from you! Please fill out the form below and we'll get in touch with you as soon as possible.</p>
-        
-        <form action="#" method="post" id="contact-form">
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required>
-            </div>
+        <div class="theme-toggle">
+            <label for="theme-switch">Dark Mode:</label>
+            <input type="checkbox" id="theme-switch">
+        </div>
 
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
-            </div>
+        <h1>Game Reviews</h1>
+        <p>Explore our latest game reviews and find your next favorite game!</p>
 
-            <div class="form-group">
-                <label for="subject">Subject:</label>
-                <input type="text" id="subject" name="subject" placeholder="Subject" required>
-            </div>
+        <div class="review">
+            <h2>Valorant</h2>
+            <p>Valorant is a free-to-play first-person tactical shooter developed by Riot Games. It combines precise gunplay with unique agent abilities to create a fast-paced and strategic gaming experience.</p>
+            <p><strong>Rating:</strong> 8.5/10</p>
+            <p><strong>Reviewed by:</strong> John Doe</p>
+            <button class="read-more">Read More</button>
+        </div>
 
-            <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
-            </div>
+        <div class="review">
+            <h2>Call of Duty: Warzone</h2>
+            <p>Call of Duty: Warzone is a battle royale game that offers intense combat and strategic gameplay. With its immersive graphics and fast-paced action, it stands out in the crowded battle royale genre.</p>
+            <p><strong>Rating:</strong> 9/10</p>
+            <p><strong>Reviewed by:</strong> Jane Smith</p>
+            <button class="read-more">Read More</button>
+        </div>
 
-            <div class="form-group">
-                <label for="reason">Reason for Contacting:</label>
-                <select id="reason" name="reason" required>
-                    <option value="">Select a reason</option>
-                    <option value="feedback">Feedback</option>
-                    <option value="support">Support</option>
-                    <option value="partnership">Partnership</option>
-                    <option value="other">Other</option>
-                </select>
-            </div>
+        <div class="review">
+            <h2>Minecraft</h2>
+            <p>Minecraft is a sandbox game that allows players to build and explore their own worlds. With its simple graphics and limitless possibilities, it remains a favorite among gamers of all ages.</p>
+            <p><strong>Rating:</strong> 9.5/10</p>
+            <p><strong>Reviewed by:</strong> Alex Johnson</p>
+            <button class="read-more">Read More</button>
+        </div>
 
-            <div class="form-group">
-                <button type="submit" id="submit">Submit</button>
-            </div>
-        </form>
+        <div class="review">
+            <h2>GTA V</h2>
+            <p>Grand Theft Auto V is an action-adventure game that offers an open-world experience. With its compelling story and vast environment, it continues to be a must-play title for any gamer.</p>
+            <p><strong>Rating:</strong> 9.7/10</p>
+            <p><strong>Reviewed by:</strong> Sarah Lee</p>
+            <button class="read-more">Read More</button>
+        </div>
 
-        <div class="contact-info">
-            <h2>Other Ways to Reach Us</h2>
-            <p>Email: <a href="mailto:support@gamesurvey.com">support@gamesurvey.com</a></p>
-            <p>Phone: +91 123-4567</p>
-            <p>Address: 123 Game Survey Lane, Suite 500, Gaming City, GA 12345</p>
+        <div class="review">
+            <h2>Cyberpunk 2077</h2>
+            <p>Cyberpunk 2077 is a narrative-driven open-world RPG set in the dystopian future of Night City. Despite a rocky launch, the game has evolved with updates that enhance its immersive experience.</p>
+            <p><strong>Rating:</strong> 7.8/10</p>
+            <p><strong>Reviewed by:</strong> Michael Brown</p>
+            <button class="read-more">Read More</button>
         </div>
     </div>
+
+    <script>
+        const themeSwitch = document.getElementById('theme-switch');
+        const body = document.body;
+
+        themeSwitch.addEventListener('change', () => {
+            if (themeSwitch.checked) {
+                body.classList.add('dark-mode');
+            } else {
+                body.classList.remove('dark-mode');
+            }
+        });
+    </script>
 </body>
 
 </html>
