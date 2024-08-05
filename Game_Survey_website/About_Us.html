@@ -10,6 +10,7 @@
 
 <body>
     <header>
+        <button id="theme-toggle" class="theme-toggle">🌙 Dark Mode</button>
         <nav>
             <ul>
                 <li><a href="Game_Survey.html">Home</a></li>
@@ -31,7 +32,7 @@
             <p>
                 Our mission is to bridge the gap between gamers and the gaming industry by collecting valuable data
                 directly from the gaming community. We strive to offer actionable insights that drive the creation of
-                innovative and engging gaming experiences.
+                innovative and engaging gaming experiences.
             </p>
             <h2>What We Do</h2>
             <p>
@@ -42,7 +43,7 @@
             </p>
             <ul>
                 <li><strong>Player Feedback Surveys:</strong> We gather detailed feedback from players on various games,
-                    genres, and plaforms.</li>
+                    genres, and platforms.</li>
                 <li><strong>Market Research:</strong> We analyze market trends to help game developers understand the
                     ever-changing landscape.</li>
                 <li><strong>Custom Reports:</strong> We offer tailored reports for developers and publishers to enhance
@@ -71,6 +72,17 @@
     <footer>
         <p>&copy; 2024 Game Insights. All rights reserved.</p>
     </footer>
+
+    <!-- JavaScript for Dark Mode Toggle -->
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            themeToggle.textContent = body.classList.contains('dark-mode') ? '☀️ Light Mode' : '🌙 Dark Mode';
+        });
+    </script>
 </body>
 
 </html>
