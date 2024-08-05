@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Game Survey Form</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="style.css"> 
+  <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <div class="container">
     <h1 id="title">Game Survey</h1>
-    <p id="description">Thank you for helping me find the best games for my website</p>
+    <p id="description">Thank you for helping us find the best games for our website.</p>
     <form action="" id="survey-form">
       <div class="form-group">
-        <label for="name" id="name-label">Name</label>
+        <label for="name" id="name-label">Name <span class="tooltip">?
+            <span class="tooltiptext">Please enter your full name</span>
+          </span></label>
         <input type="text" id="name" name="name" placeholder="Enter your name" required>
       </div>
       <div class="form-group">
-        <label for="email" id="email-label">Email</label>
+        <label for="email" id="email-label">Email <span class="tooltip">?
+            <span class="tooltiptext">We'll never share your email with anyone else</span>
+          </span></label>
         <input type="email" id="email" name="email" placeholder="Enter your email" required>
       </div>
       <div class="form-group">
@@ -64,4 +70,44 @@
           <label for="improvement-gameplay"><input type="checkbox" id="improvement-gameplay" name="improvement" value="gameplay">Gameplay</label>
           <label for="improvement-community"><input type="checkbox" id="improvement-community" name="improvement" value="community">Community</label>
           <label for="improvement-features"><input type="checkbox" id="improvement-features" name="improvement" value="features">Features</label>
-          <label
+          <label for="improvement-cheaper-battle-pass"><input type="checkbox" id="improvement-cheaper-battle-pass" name="improvement" value="cheaper-battle-pass">Cheaper Battle Pass</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="comments">Any other comments or suggestions?</label>
+        <textarea id="comments" name="comments" rows="4" placeholder="Share your thoughts"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="rating">Rate your overall experience</label>
+        <input type="range" id="rating" name="rating" min="1" max="10" step="1">
+        <span id="rating-value">5</span>
+      </div>
+      <div class="form-group">
+        <label for="experience">How long have you been playing games?</label>
+        <input type="text" id="experience" name="experience" placeholder="e.g., 5 years">
+      </div>
+      <div class="form-group">
+        <label for="platforms">Which gaming platforms do you use?</label>
+        <div class="form-checkbox-group">
+          <label for="platform-pc"><input type="checkbox" id="platform-pc" name="platforms" value="pc">PC</label>
+          <label for="platform-console"><input type="checkbox" id="platform-console" name="platforms" value="console">Console</label>
+          <label for="platform-mobile"><input type="checkbox" id="platform-mobile" name="platforms" value="mobile">Mobile</label>
+          <label for="platform-vr"><input type="checkbox" id="platform-vr" name="platforms" value="vr">VR</label>
+        </div>
+      </div>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </div>
+
+  <script>
+    // Update rating value on range input
+    const rating = document.getElementById('rating');
+    const ratingValue = document.getElementById('rating-value');
+
+    rating.addEventListener('input', function () {
+      ratingValue.textContent = this.value;
+    });
+  </script>
+</body>
+
+</html>
