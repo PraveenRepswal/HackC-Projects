@@ -51,8 +51,72 @@
                         <textarea id="message" name="message" rows="6" required></textarea>
                     </div>
 
+                    <div class="form-group">
+                        <label for="attachment">Attach a file:</label>
+                        <input type="file" id="attachment" name="attachment">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="urgency">Urgency:</label>
+                        <select id="urgency" name="urgency">
+                            <option value="low">Low</option>
+                            <option value="medium">Medium</option>
+                            <option value="high">High</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-method">Preferred Contact Method:</label>
+                        <div>
+                            <input type="radio" id="contact-email" name="contact-method" value="email" checked>
+                            <label for="contact-email">Email</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="contact-phone" name="contact-method" value="phone">
+                            <label for="contact-phone">Phone</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="newsletter">Subscribe to Newsletter:</label>
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                    </div>
+
                     <button type="submit">Send Message</button>
                 </form>
+
+                <div class="contact-info">
+                    <h2>Our Contact Information</h2>
+                    <p>Phone: +91 123-4567</p>
+                    <p>Email: support@gamesurvey.com</p>
+                    <p>Address: 123 Gaming Street, Gamer City, GC 12345</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-item">
+                    <h3>How do I participate in a survey?</h3>
+                    <p>You can participate by clicking on the 'Survey' link in the navigation menu and following the instructions on the page.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How can I submit a game review?</h3>
+                    <p>You can submit a review by navigating to the 'Game Reviews' page and filling out the review form.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How do I unsubscribe from the newsletter?</h3>
+                    <p>To unsubscribe, click on the 'Unsubscribe' link at the bottom of any newsletter email, or contact our support team directly.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="map">
+            <div class="container">
+                <h2>Find Us</h2>
+                <p>Our office location:</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.83543450935!2d144.96305791550493!3d-37.816279742041755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577ad1a4dd8c3c3!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1603852252555!5m2!1sen!2sau" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
         </section>
     </main>
