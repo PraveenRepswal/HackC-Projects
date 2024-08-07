@@ -2,102 +2,195 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    line-height: 1.6;
 }
 
 .container {
     width: 80%;
     margin: 0 auto;
+    padding: 20px;
 }
+
 
 nav {
-    background-color: #333;
+    background: #333;
     color: #fff;
-    padding: 1em 0;
+    padding: 15px 0;
 }
 
-nav .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav .logo h1 {
+.logo h1 {
     margin: 0;
+    font-size: 24px;
+    color: #fff;
 }
 
-nav .nav-links {
+.nav-links {
     list-style: none;
+    padding: 0;
     display: flex;
-    gap: 1em;
+    justify-content: flex-end;
 }
 
-nav .nav-links a {
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
     color: #fff;
     text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
 }
 
 .hero {
-    background-color: #444;
+    background: url('hero-image.jpg') no-repeat center center/cover;
     color: #fff;
-    padding: 2em 0;
     text-align: center;
+    padding: 100px 0;
 }
 
-.hero .container {
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 24px;
+}
+
+.featured-reviews, .latest-reviews {
+    background: #f4f4f4;
+    padding: 20px 0;
+}
+
+.featured-reviews h2, .latest-reviews h2 {
     text-align: center;
+    margin-bottom: 20px;
 }
 
-.featured-reviews {
-    padding: 2em 0;
+.review {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.featured-reviews .review {
-    background-color: #f9f9f9;
-    padding: 1em;
-    border-radius: 8px;
-    margin-bottom: 1em;
-}
-
-.featured-reviews .review-content h3 {
+.review-content h3 {
     margin-top: 0;
 }
 
-.featured-reviews .review-content p {
-    margin: 0.5em 0;
+.review-content p {
+    margin-bottom: 10px;
 }
+
+
+.blog {
+    padding: 20px 0;
+}
+
+.blog h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.blog-post {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post h3 {
+    margin-top: 0;
+}
+
+.blog-post a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.blog-post a:hover {
+    text-decoration: underline;
+}
+
+.testimonials {
+    background: #f4f4f4;
+    padding: 20px 0;
+}
+
+.testimonials h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.testimonial-carousel {
+    display: flex;
+    justify-content: center;
+}
+
+.testimonial {
+    background: #fff;
+    padding: 20px;
+    margin: 0 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
 
 .about-us {
-    background-color: #f4f4f4;
-    padding: 2em 0;
+    padding: 20px 0;
 }
 
-.about-us .container {
+.about-us h2 {
     text-align: center;
+    margin-bottom: 20px;
+}
+
+.team {
+    margin-top: 20px;
+}
+
+.team h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.team-member {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.team-member h4 {
+    margin-top: 0;
+}
+
+.team-member p {
+    margin-bottom: 10px;
 }
 
 footer {
-    background-color: #333;
+    background: #333;
     color: #fff;
     text-align: center;
-    padding: 1em 0;
+    padding: 20px 0;
 }
 
-@media (max-width: 768px) {
-    .container {
-        width: 90%;
-    }
+footer p {
+    margin: 0;
+}
 
-    nav .container {
-        flex-direction: column;
-    }
+.social-media a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
 
-    nav .nav-links {
-        flex-direction: column;
-        gap: 0.5em;
-    }
-
-    .featured-reviews .review {
-        flex-direction: column;
-    }
+.social-media a:hover {
+    text-decoration: underline;
 }
