@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Game Reviews</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <h1>Game Reviews</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="user-auth.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feedback, or need support, feel free to reach out to us. We're here to help!</p>
+            <div class="contact-info">
+                <div class="info-item">
+                    <h3>Email Us</h3>
+                    <p><a href="mailto:support@gamereviews.com">support@gamereviews.com</a></p>
+                </div>
+                <div class="info-item">
+                    <h3>Call Us</h3>
+                    <p><a href="tel:+1234567890">+1 234 567 890</a></p>
+                </div>
+                <div class="info-item">
+                    <h3>Visit Us</h3>
+                    <p>1234 Game St, Suite 567<br>Gamer City, GC 12345</p>
+                </div>
+            </div>
+
+            <div class="form-wrapper">
+                <h2>Send Us a Message</h2>
+                <form action="submit_contact" method="post">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="attachment">Attachment</label>
+                        <input type="file" id="attachment" name="attachment">
+                    </div>
