@@ -105,3 +105,113 @@ nav .nav-links a:hover {
     font-size: 16px;
     margin-bottom: 15px;
 }
+
+.blog-content .blog-post blockquote {
+    font-size: 20px;
+    color: #007acc;
+    padding: 10px 20px;
+    margin: 20px 0;
+    background: #f0f0f0;
+    border-left: 5px solid #007acc;
+}
+
+.blog-content .blog-post .read-more {
+    color: #007acc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.blog-content .blog-post .read-more:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Extended Styles for Blog Post */
+.blog-content .blog-post h3::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 5px;
+    background: #007acc;
+    margin-bottom: 15px;
+}
+
+.blog-content .blog-post h3 span {
+    font-weight: normal;
+    color: #777;
+    font-size: 18px;
+}
+
+.blog-content .blog-post p.lead {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.blog-content .blog-post blockquote::before {
+    content: open-quote;
+    font-size: 60px;
+    line-height: 0;
+    color: #007acc;
+    vertical-align: -15px;
+}
+
+.blog-content .blog-post blockquote::after {
+    content: close-quote;
+    font-size: 60px;
+    line-height: 0;
+    color: #007acc;
+    vertical-align: -15px;
+}
+
+.blog-content .blog-post blockquote p {
+    display: inline;
+}
+
+.blog-content .blog-post ul {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.blog-content .blog-post ul li {
+    list-style-type: disc;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.blog-content .blog-post ol {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.blog-content .blog-post ol li {
+    list-style-type: decimal;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.blog-content .blog-post .author {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #777;
+}
+
+.blog-content .blog-post .tags {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #007acc;
+}
+
