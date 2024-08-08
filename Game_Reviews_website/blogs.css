@@ -1,0 +1,107 @@
+/* CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+nav .nav-links li {
+    margin-left: 20px;
+}
+
+nav .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav .nav-links a:hover {
+    color: #f4f4f4;
+    text-decoration: underline;
+}
+
+/* Blog Header */
+.blog-header {
+    background: #007acc;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.blog-header h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.blog-header p {
+    font-size: 18px;
+}
+
+
+.blog-content {
+    margin-bottom: 40px;
+}
+
+.blog-content .blog-post {
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-content .blog-post h3 {
+    margin-top: 0;
+    font-size: 28px;
+    color: #333;
+}
+
+.blog-content .blog-post .date {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.blog-content .blog-post p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
