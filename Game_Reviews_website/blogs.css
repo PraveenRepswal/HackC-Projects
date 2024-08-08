@@ -215,3 +215,109 @@ footer p {
     color: #007acc;
 }
 
+.blog-content .blog-post .tags a {
+    text-decoration: none;
+    color: #007acc;
+    margin-right: 10px;
+}
+
+.blog-content .blog-post .tags a:hover {
+    text-decoration: underline;
+}
+
+.blog-content .blog-post .share {
+    margin-top: 20px;
+}
+
+.blog-content .blog-post .share a {
+    text-decoration: none;
+    color: #007acc;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.blog-content .blog-post .share a:hover {
+    text-decoration: underline;
+}
+
+.blog-content .blog-post .share i {
+    margin-right: 5px;
+}
+
+/* Pagination */
+.blog-content .pagination {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.blog-content .pagination a {
+    color: #007acc;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.blog-content .pagination a:hover {
+    text-decoration: underline;
+}
+
+.blog-content .pagination .current {
+    color: #333;
+    border-bottom: 2px solid #007acc;
+}
+
+/* Image Styling */
+.blog-content .blog-post img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.blog-content .blog-post .image-caption {
+    font-size: 14px;
+    color: #777;
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* Sidebar */
+.sidebar {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.sidebar h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.sidebar p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #007acc;
+    font-size: 16px;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
