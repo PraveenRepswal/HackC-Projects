@@ -205,3 +205,222 @@ footer .social-media a.snapchat {
 footer .social-media a.tiktok {
     color: #000000;
 }
+
+footer .social-media a:hover {
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.testimonials-section .container p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.125rem;
+}
+
+@media (max-width: 576px) {
+    .testimonials-wrapper {
+        gap: 0.5rem;
+    }
+
+    .testimonial-box {
+        padding: 0.75rem;
+    }
+
+    footer .social-media a {
+        margin: 0 0.25rem;
+    }
+}
+
+.testimonial-box:before {
+    content: '“';
+    font-size: 3rem;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    color: rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-box:after {
+    content: '”';
+    font-size: 3rem;
+    position: absolute;
+    bottom: -10px;
+    right: 10px;
+    color: rgba(0, 0, 0, 0.1);
+}
+
+nav .nav-links a:hover {
+    background-color: #444;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+footer .social-media a.discord {
+    color: #7289da;
+}
+
+footer .social-media a.github {
+    color: #333;
+}
+
+footer .social-media a.medium {
+    color: #00ab6c;
+}
+
+footer .social-media a.telegram {
+    color: #0088cc;
+}
+
+.testimonial-box .quote-icon {
+    position: absolute;
+    font-size: 4rem;
+    color: rgba(0, 0, 0, 0.05);
+    top: 20px;
+    left: 20px;
+}
+
+.testimonial-box .quote-icon-bottom {
+    position: absolute;
+    font-size: 4rem;
+    color: rgba(0, 0, 0, 0.05);
+    bottom: 20px;
+    right: 20px;
+}
+
+.testimonial-box .quote-icon::before {
+    content: '“';
+}
+
+.testimonial-box .quote-icon-bottom::before {
+    content: '”';
+}
+
+nav .nav-links a:focus {
+    outline: none;
+    background-color: #555;
+    color: #fff;
+}
+
+footer .social-media a:hover::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    margin-top: 2px;
+}
+
+footer p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+.testimonial-box:hover span {
+    color: #333;
+}
+
+@media (max-width: 1024px) {
+    .testimonials-section .container {
+        padding: 0 1rem;
+    }
+
+    .testimonials-wrapper {
+        gap: 0.75rem;
+    }
+}
+
+.testimonial-box .author-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+
+.testimonial-box .author-img img {
+    width: 100%;
+    height: auto;
+}
+
+.testimonial-box .author-details {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.testimonial-box .author-details h4 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.testimonial-box .author-details p {
+    margin: 0;
+    font-size: 0.875rem;
+    color: #777;
+}
+
+footer .newsletter {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+footer .newsletter input[type="email"] {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    width: 250px;
+    margin-right: 10px;
+}
+
+footer .newsletter input[type="submit"] {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #555;
+    color: #fff;
+    cursor: pointer;
+}
+
+footer .newsletter input[type="submit"]:hover {
+    background-color: #444;
+}
+
+.testimonial-box {
+    transition: all 0.3s ease;
+}
+
+.testimonial-box:hover {
+    transform: scale(1.05);
+}
+
+.testimonials-section {
+    padding: 2.5rem 0;
+}
+
+nav .logo a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer {
+    padding: 1.5rem 0;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .social-media {
+    margin-top: 1rem;
+}
+
+footer .social-media a {
+    font-size: 1.25rem;
+    margin: 0 0.75rem;
+}
